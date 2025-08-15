@@ -1,32 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
 import { Fade } from 'react-awesome-reveal';
-import { Howl } from "howler";
 import Button from "../Button/Button";
 import FooterBg from "./FooterBg/FooterBg";
 import Profiles from "../Profiles/Profiles";
-import { theme } from "tailwind.config";
 import { MENULINKS } from "../../constants";
 
 const Footer = () => {
-  const [playbackRate, setPlaybackRate] = useState(0.75);
-
-  const heartClickSound = new Howl({
-    src: ["/sounds/glug-a.mp3"],
-    rate: playbackRate,
-    volume: 0.5,
-  });
-
-  const handleClick = () => {
-    setPlaybackRate((rate) => rate + 0.1);
-    heartClickSound.play();
-  };
-
   return (
     <footer
       className="w-full relative select-none bg-cover"
       style={{
-        backgroundImage: `linear-gradient(to right, ${theme.colors.indigo.light}, ${theme.colors.indigo.dark})`,
+        backgroundImage: "linear-gradient(to right, #a5b4fc, #4338ca)", // indigo-300 to indigo-800
       }}
     >
       <FooterBg />
@@ -50,9 +34,7 @@ const Footer = () => {
             </div>
             <p className="text-center text-white text-sm sm:text-base font-medium tracking-wide mt-8">
               Developed with{" "}
-              <button onClick={handleClick} className="link cursor-none">
-                <span className="block animate-bounce">❤️</span>
-              </button>{" "}
+              <span className="block animate-bounce cursor-pointer">❤️</span>{" "}
               by <span className="text-white">Nikesh S</span>
             </p>
           </div>

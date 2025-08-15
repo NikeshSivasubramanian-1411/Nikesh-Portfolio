@@ -8,7 +8,7 @@ const Tab = ({ index, tab, activeTab, handleOnClick, setIsHovering }) => {
       onMouseDown={() => handleOnClick(index)}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      className="relative px-4 py-1 rounded-full cursor-none"
+      className="relative px-4 py-1 rounded-full cursor-pointer"
       style={{
         transformStyle: "preserve-3d",
       }}
@@ -60,10 +60,6 @@ const TabsContent = ({ tabs, isHovering }) => {
   );
 };
 
-const mouseClickSound = new Howl({
-  src: ["/sounds/mouse-click.mp3"],
-});
-
 const Tabs = ({ tabItems }) => {
   const [isHovering, setIsHovering] = useState(false);
   const [tabs, setTabs] = useState(tabItems);
@@ -75,7 +71,6 @@ const Tabs = ({ tabItems }) => {
     updatedTabs.unshift(selectedTab[0]);
     setTabs(updatedTabs);
     setActiveTab(updatedTabs[0]);
-    mouseClickSound.play();
   };
 
   return (
