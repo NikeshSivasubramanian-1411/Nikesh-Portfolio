@@ -20,12 +20,12 @@ const About3 = ({ sectionRef, MENULINKS }) => {
         <div className="flex flex-col justify-center">
           
           {/* Heading */}
-          <h1 className="text-6xl font-medium text-gradient w-fit staggered-reveal">
+         <h1 className="text-6xl font-medium text-gradient w-fit staggered-reveal text-center">
             About Me
           </h1>
 
           {/* Paragraph */}
-          <h2 className="text-[1.65rem] font-medium leading-relaxed text-gray-300 max-w-[65ch] w-full mt-4 staggered-reveal">
+          <h2 className="text-[1.65rem] font-medium leading-relaxed text-gray-300 max-w-[65ch] w-full mt-4 staggered-reveal text-justify justify-center">
             I am a passionate and dedicated Computer Science and Engineering student with a strong foundation in cybersecurity 
             and a working knowledge of full-stack development. With hands-on experience in securing systems, understanding 
             cyber threats, and basic web development using modern technologies, I bring a problem-solving mindset and a 
