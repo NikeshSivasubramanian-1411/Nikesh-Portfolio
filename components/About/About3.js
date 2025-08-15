@@ -10,7 +10,7 @@ const About3 = ({ sectionRef, MENULINKS }) => {
         {/* Profile Photo - Bigger like before */}
         <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-lg flex-shrink-0 mt-20">
           <img
-            src="/images/profile.jpg" // ensure the image exists in public/images/
+            src="/images/Profile.jpg" // ensure the image exists in public/images/
             alt="Nikesh S"
             className="w-full h-full object-cover"
           />
