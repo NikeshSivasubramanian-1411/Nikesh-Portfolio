@@ -20,9 +20,11 @@ const Footer = () => {
             <h1 className="font-medium text-3xl md:text-4xl text-center">
               Feel free to connect on social media.
             </h1>
+
             <div className="text-center">
               <Profiles />
             </div>
+
             <div className="pt-4 text-center">
               <Button
                 href={`#${MENULINKS[5].ref}`}
@@ -32,14 +34,15 @@ const Footer = () => {
                 Let&apos;s Talk
               </Button>
             </div>
-            <p className="text-center text-white text-sm sm:text-base font-medium tracking-wide mt-8">
-              Developed with{" "}
-                <span className="block animate-bounce">❤️</span>
-              by <span className="text-white">Nikesh S</span>
+
+            {/* ✅ Updated Footer Text */}
+            <p className="text-center text-white text-sm sm:text-base font-medium tracking-wide mt-8 flex items-center justify-center gap-1">
+              Developed with <span className="animate-bounce">❤️</span> by <span className="text-white">Nikesh S</span>
             </p>
           </div>
         </div>
       </Fade>
+
       <img
         src="/footer-curve.svg"
         className="w-full rotate-180"
