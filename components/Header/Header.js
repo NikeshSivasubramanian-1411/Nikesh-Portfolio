@@ -30,7 +30,7 @@ const Header = ({ children }) => {
           />
         </a>
         <div className="outer-menu relative flex items-center gap-8 z-[1]">
-          <SoundBar />
+          
           <input
             ref={inputRef}
             aria-labelledby="menu"
