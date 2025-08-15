@@ -118,7 +118,7 @@ export const PROJECTS = [
   // },
   {
     name: "shopsy",
-    image: "/projects/airbnb.webp",
+    image: "/projects/shopsy.png",
     blurImage: "/projects/blur/airbnb-blur.webp",
     description: "Shopsy an ecommerce website using React.js",
     gradient: ["#F14658", "#DC2537"],
@@ -127,7 +127,7 @@ export const PROJECTS = [
   },
   {
     name: "Web_App_Vulnerability_Scanner",
-    image: "/projects/tesla.webp",
+    image: "/projects/webappvuln.png",
     blurImage: "/projects/blur/tesla-blur.webp",
     description: "A vulnerability scanner using python by using socket.io and request libraries",
     gradient: ["#142D46", "#2E4964"],
@@ -136,7 +136,7 @@ export const PROJECTS = [
   },
   {
     name: "Weather-App",
-    image: "/projects/medium.webp",
+    image: "/projects/weatherapp.png",
     blurImage: "/projects/blur/medium-blur.webp",
     description: "Realtime weather using Open Weather API",
     gradient: ["#FFA62E", "#EA4D2C"],
@@ -145,7 +145,7 @@ export const PROJECTS = [
   },
   {
     name: "Random Password Generator",
-    image: "/projects/inshorts.webp",
+    image: "/projects/Randompass.png",
     blurImage: "/projects/blur/airbnb-blur.webp",
     description:
       "Random Strong password generator",
