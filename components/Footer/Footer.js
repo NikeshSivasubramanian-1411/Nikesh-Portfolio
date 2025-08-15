@@ -34,7 +34,9 @@ const Footer = () => {
             </div>
             <p className="text-center text-white text-sm sm:text-base font-medium tracking-wide mt-8">
               Developed with{" "}
-              <span className="block animate-bounce cursor-pointer">❤️</span>{" "}
+            <button onClick={handleClick} className="link cursor-none">
+                <span className="block animate-bounce">❤️</span>
+              </button>{" "}
               by <span className="text-white">Nikesh S</span>
             </p>
           </div>
